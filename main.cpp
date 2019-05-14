@@ -8,7 +8,8 @@ int main() {
     struct tm * timeinfo;
     time (&date);
     timeinfo = localtime (&date);
-    printf ("%s", asctime(timeinfo));
+    printf("%s", asctime(timeinfo));
+    printf("Welcome to xconsole!");
     string line;
     while(getline(cin, line)) {
         if (line == "help") {
